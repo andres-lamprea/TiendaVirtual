@@ -124,17 +124,7 @@ button{
 button:hover{
     background: rgb(143, 146, 150);
 }
-.main-canvas{
-    display: flex;
-    padding-left:10 ;
-    padding-right: 4rem;
-    justify-content: space-between;
-    
-    flex-wrap: wrap;
-}
-.boton-enviar{
-    width: 4rem;
-}
+
 .logo-nav-container{
     display: flex;
     padding-left: 5rem;
@@ -173,104 +163,7 @@ button:hover{
     margin-top:2rem;
     
 }
-.tabla{
-    background: rgba(195, 195, 195, 0.6);
-    width:250px;
-    position: fixed;
-    top:12rem;
-    right: 5rem;
-    border-collapse: collapse;
-    border: black 2px solid;
-}
-tr{
-    border: black 2px solid;
-}
-
-#lienzo{
-    padding-left:0px ;
-    /*padding-bottom: 5rem;*/
-    display: block;
-    background-color: white;
-    border: 1px solid #333 ;
-    position: -webkit-sticky;
-}
-#diagramatorta{
-    padding-left:30px ;
-    padding-bottom: 50px;
-    display: block;
-    background-color: transparent;
-    
-    
-}
-.dibujo{
-    /*float: left;*/
-    width: 350px;
-    padding-top: 1rem;
-    bottom:35px;
-    margin-left:3px;
-}
-#miformulari{
-    padding-top: 10px;
-    width: 250px;
-}
-
-#miformulari div{
-float: right;
-
-}
-#miformulari div #ingresar{
-    float: right;
-    top:10px;
-    width: 15px;
-    padding-right: 2px;
-    
-}
-.boton-enviar{
-    color: grey;
-    font-size: 15px;
-    border-style: dashed;
-}
-#miformulari p{
-    display: none;
-  }
-  #miformulari br{
-    display: none;
-  }
 @media only screen and (max-width: 767px ){
-    .contain{
-        width: 100%;
-    }
-    .container{
-    padding-left: 0%;
-        width: 100%;
-    }
-  .tabla{
-      display: none;
-  }
-  #miformulari{
-    padding-bottom: 40px;
-    padding-top: 10px;
-    width: 1250px;
-    height: 40px;
-}
-
-#miformulari div{
-float: right;
-top: 20px;
-height: 18px;
-}
-    #miformulari div #ingresar{
-        float: right;
-        top:35px;
-        width: 15px;
-        padding-right: 2px;
-    }
-        #miformulari #ingresar #ingreso{
-            top:25px;
-        }
-            #miformulari  #ingresar #envia{
-                float: right;
-            }
 
     .menu-icon{
         display:block;
