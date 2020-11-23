@@ -17,6 +17,16 @@ p{
     
     margin-bottom: 1.6em;
 }
+#lupa a {
+    margin-top: 10px;
+    float: left;
+    width: 10px;
+    height: 20px;
+}
+#lupa a img{
+    margin-top: -4px;
+    margin-left: -7px;
+}
 #buscador{
     width: 350px;
     padding-right: 40px;
@@ -93,7 +103,9 @@ input{
 }
 .navigation ul{
     margin: 0;
+    margin-right: 30px;
     padding:0;
+
     list-style: none;
     display: flex;
     flex-wrap: wrap;
