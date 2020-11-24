@@ -93,7 +93,7 @@ p{
 } 
 .header-filtros h3{
     
-    font-size: small;
+    font-size: medium;
 }
 
 .botones-filtros{
@@ -108,10 +108,44 @@ width: 300px;
 
 }
 .botones-filtros ul li{
-    
     border-width: 1px 0px 1px 0px;
 }
-
+#select {
+    
+    font-size: smaller;
+}
+.marcas {
+    display: none;
+}
+.marcas.show{
+    transition:all 1.5s linear;
+    display: block;
+}
+.rams {
+    display: none;
+}
+.rams.show{
+    transition:all 1.5s linear;
+    display: block;
+}.tamaños {
+    display: none;
+}
+.tamaños.show{
+    transition:all 1.5s linear;
+    display: block;
+}.procesadores {
+    display: none;
+}
+.procesadores.show{
+    transition:all 1.5s linear;
+    display: block;
+}.almacenamientos {
+    display: none;
+}
+.almacenamientos.show{
+    transition:all 1.5s linear;
+    display: block;
+}
 
 button{
     margin-top: -10;
@@ -120,6 +154,8 @@ button{
     height: 40px;
     background-color: rgb(214, 211, 211);
     text-align: left;
+    font-size: medium;
+
 }
 button:hover{
     background: rgb(143, 146, 150);
