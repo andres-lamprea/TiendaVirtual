@@ -1,0 +1,13 @@
+var producto=[
+{
+    "productos":
+    {
+        "computadores":{
+            "hp141":{
+                "imagen":"imagenes/hp-14in-14-cf3037la.png"
+
+            
+            }
+        }
+    }
+}]

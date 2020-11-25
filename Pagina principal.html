@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="mihojadeestilos.css">
+
 </head>
 <body>
     <header class="header">
@@ -67,10 +68,19 @@
             </div>
         </div>
     </div>
-    <div>
-
+    <div class="productos">
+     <div class="producto1">
+         <img class="hp14">
+         <p>Primer computador</p>
+     </div>
     </div>
+    <script src="imagenes_productos.json"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="script.js"></script>
+    <script>
+        var image = producto[0].computadores.imagen.url;
+        
+        $('.hp14').attr('src',image);
+    </script>
 </body>
 </html>

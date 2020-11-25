@@ -110,6 +110,10 @@ width: 300px;
 .botones-filtros ul li{
     border-width: 1px 0px 1px 0px;
 }
+.productos{
+    margin-top: -250px;
+    margin-left: 350px;
+}
 #select {
     
     font-size: smaller;
