@@ -1,10 +1,22 @@
 var producto=[
-{
+{"computadores":[
+        {
+            'nombre':'14cf3037',
+            'url':'imgenes/hp14in14cf3037la.png'
+        },
+        {
+            'nombre':'15gw0001la',
+            'url':'imgenes/hp15in15gw0001la.png'
+        },
+        {
+            'nombre':'15dk0008la',
+            'url':'imgenes/hp15ingamer15dk0008la.png'
+        },    
+        {
+            'nombre':'ux433FAC',
+            'url':'imgenes/asuszenbookux433FAC.png'
+        }
     
-            
-                "computadores":{"imagen":{'url':'imgenes/hp14in14cf3037la.png'}}
-
-            
-            
-    }
+]
+}
 ]
