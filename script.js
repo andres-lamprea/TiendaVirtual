@@ -47,4 +47,5 @@ jQuery('document').ready(function($){
         }
     });
 });
+
 //funcion para validar que no se ingresen valores mayores a lo permitido en cada campo

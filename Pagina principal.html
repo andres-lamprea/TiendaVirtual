@@ -69,7 +69,7 @@
         </div>
     </div>
     <div class="productos">
-     <div class="producto1">
+     <div class="producto1" id="product">
          <img class="hp14">
          <p>Primer computador</p>
      </div>
@@ -78,9 +78,29 @@
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="script.js"></script>
     <script>
-        var image = producto[0].computadores.imagen.url;
+
+
+        for(var i = 0;i< producto[0].computadores.length;i++){
+            var image = producto[0].computadores[i].url;
+            console.log(image);
+            addElement();
+        }
+
+        function addElement(){
+    var newDiv = document.createElement("div");
+    var newImg= document.createElement("img");
+    var contenedor=document.getElementById("product");
+    
+    
+    $(newImg).attr('src',image);
+    newDiv.appendChild(newImg);
+    contenedor.appendChild(newDiv);
+
+
+       // var image = producto[0].computadores.imagen.url;
         
-        $('.hp14').attr('src',image);
+       // $('.hp14').attr('src',image);
+    }
     </script>
 </body>
 </html>
