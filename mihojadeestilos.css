@@ -77,8 +77,9 @@ p{
 
 .espacio-filtros{
     margin-left: 2px;
-    margin-top: 150px;
+    margin-top: 2rem;
     border: 1px;
+    position: fixed;
 }
 .header-filtros{
     background: -webkit-linear-gradient(left,rgb(36, 42, 46)0%,rgb(82, 89, 92)50%,rgb(81, 85, 88)100%);
@@ -111,7 +112,7 @@ width: 300px;
     border-width: 1px 0px 1px 0px;
 }
 .productos{
-    margin-top: -250px;
+    margin-top: 150px;
     margin-left: 350px;
 }
 #select {

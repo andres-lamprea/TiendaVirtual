@@ -15,8 +15,16 @@ var producto=[
         {
             'nombre':'ux433FAC',
             'url':'imgenes/asuszenbookux433FAC.png'
+        },
+        {
+            'nombre':'um431DaAm026',
+            'url':'imgenes/asuszenbookum431DaAm026.png'
+        },
+        {
+            'nombre':'14m413dabv337t',
+            'url':'imgenes/asusvivo14m413dabv337t.png'
         }
-    
+        
 ]
 }
 ]

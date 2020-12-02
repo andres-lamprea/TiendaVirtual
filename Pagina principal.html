@@ -82,6 +82,7 @@
 
         for(var i = 0;i< producto[0].computadores.length;i++){
             var image = producto[0].computadores[i].url;
+            var text = producto[0].computadores[i].nombre;
             console.log(image);
             addElement();
         }
@@ -89,11 +90,18 @@
         function addElement(){
     var newDiv = document.createElement("div");
     var newImg= document.createElement("img");
+    var newPar= document.createTextNode(text);
     var contenedor=document.getElementById("product");
     
     
     $(newImg).attr('src',image);
+    $(newImg).css("float","left");
+    $(newDiv).css("background-color","white");
+    $(newDiv).css("margin-top","10px");
+    $(newDiv).css("width","750px");
+    $(newDiv).css("height","250px");
     newDiv.appendChild(newImg);
+    newDiv.appendChild(newPar);
     contenedor.appendChild(newDiv);
 
 
