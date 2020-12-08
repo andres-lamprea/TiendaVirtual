@@ -70,8 +70,6 @@
     </div>
     <div class="productos">
      <div class="producto1" id="product">
-         <img class="hp14">
-         <p>Primer computador</p>
      </div>
     </div>
     <script src="imagenes_productos.json"></script>
@@ -80,32 +78,69 @@
     <script>
 
 
-        for(var i = 0;i< producto[0].computadores.length;i++){
-            var image = producto[0].computadores[i].url;
-            var text = producto[0].computadores[i].nombre;
-            console.log(image);
+        for(var i = 0;i< producto[0].computador.length;i++){
+            var image = producto[0].computador[i].url;
+            var image1 = producto[0].computador[i].url2;
+            var nombre = 'Computador'+' '+producto[0].computador[i].marca + ' '+
+            producto[0].computador[i].tamaño +' '+ 'pulgadas'+' '+ producto[0].computador[i].nombre;
+            var text = producto[0].computador[i].nombre;
+            var ram=producto[0].computador[i].ram;
+            var tamaño=producto[0].computador[i].tamaño;
+            var almacenamiento=producto[0].computador[i].almacenamiento;
+            var marca=producto[0].computador[i].marca;
+            var precio=producto[0].computador[i].precio;
+            var procesador=producto[0].computador[i].procesador;
             addElement();
         }
 
         function addElement(){
     var newDiv = document.createElement("div");
     var newImg= document.createElement("img");
-    var newPar= document.createTextNode(text);
+    var Pa=document.createElement("p");
+    var newPar= document.createTextNode(nombre);
+    var div1=document.createElement("div");
     var contenedor=document.getElementById("product");
+    var lista = document.createElement("ul");
+    var botonCarrito=document.createElement("button");
     
     
     $(newImg).attr('src',image);
+    $(newImg).attr('onmouseover',"this.src='"+image1+"'");
+    $(newImg).attr('onmouseout',"this.src='"+image+"'");
+    $(newImg).attr('onclick',"javascript:this.width=350;height=350");
+    $(newImg).attr('ondblclick',"javascript:this.width=250;height=250");
     $(newImg).css("float","left");
-    $(newDiv).css("background-color","white");
-    $(newDiv).css("margin-top","10px");
-    $(newDiv).css("width","750px");
-    $(newDiv).css("height","250px");
+    $(newDiv).css({"background-color":"white","margin-top":"10px","width":"750px","height":"350px","font-size":"18px"});
+    $(lista).css("border-top-style","solid");
+    $(lista).css("border-width","1px");
+    $(lista).css("margin-left","210px");
+    $(lista).append('<li style="list-style: none;">'+"ref: "+text+"Gb"+'</li>');
+    $(lista).append('<li style="list-style: none;">'+"ram: "+ram+"Gb"+'</li>');
+    $(lista).append('<li style="list-style: none;">'+"tamaño: "+tamaño+"Pulgadas"+'</li>');
+    $(lista).append('<li style="list-style: none;">'+"almacenamiento: "+almacenamiento+"Gb"+'</li>');
+    $(lista).append('<li style="list-style: none;">'+"marca: "+marca+'</li>');
+    $(lista).append('<li style="list-style: none;">'+"precio: "+precio+"COP"+'</li>');
+    $(lista).append('<li style="list-style: none;">'+"procesador: "+procesador+'</li>');
+    $(botonCarrito).css({"float":"right",
+    "margin-top":"-60px",
+    "margin-right":"20px",
+    "width":"150px",
+    "border-style":"ridge",
+    "border-width":"1px",
+    "background":"rgb(33, 206, 9)",
+    "text-align":"center",
+    "color":"white"});
+    $(botonCarrito).append("Agregar al carrito");
     newDiv.appendChild(newImg);
-    newDiv.appendChild(newPar);
+    Pa.appendChild(newPar);
+    newDiv.appendChild(Pa);
+    newDiv.appendChild(div1);
     contenedor.appendChild(newDiv);
+    div1.appendChild(lista);
+    newDiv.appendChild(botonCarrito);
 
 
-       // var image = producto[0].computadores.imagen.url;
+       // var image = producto[0].computador.imagen.url;
         
        // $('.hp14').attr('src',image);
     }

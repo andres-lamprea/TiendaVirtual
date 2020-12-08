@@ -1,28 +1,76 @@
 var producto=[
-{"computadores":[
+{"computador":[
         {
+            'tipo':'computador',
             'nombre':'14cf3037',
-            'url':'imgenes/hp14in14cf3037la.png'
+            'url':'imgenes/hp14in14cf3037la.png',
+            'url2':'imgenes/hp15in15gw0001la.png',
+            'ram': '4',
+            'tamaño':'14',
+            'marca':'HP',
+            'procesador':'intel i3',
+            'almacenamiento':'256',
+            'precio' : '1500000'
         },
         {
+            'tipo':'computador',
             'nombre':'15gw0001la',
-            'url':'imgenes/hp15in15gw0001la.png'
+            'url':'imgenes/hp15in15gw0001la.png',
+            'url2':'imgenes/hp14in14cf3037la.png',
+            'ram': '8',
+            'tamaño':'15',
+            'marca':'HP',
+            'procesador':'Amd ryzen 3',
+            'almacenamiento':'1000',
+            'precio' : '2500000'
         },
         {
+            'tipo':'computador',
             'nombre':'15dk0008la',
-            'url':'imgenes/hp15ingamer15dk0008la.png'
+            'url':'imgenes/hp15ingamer15dk0008la.png',
+            'url2':'imgenes/hp14in14cf3037la.png',
+            'ram': '16',
+            'tamaño':'15',
+            'marca':'HP',
+            'procesador':'intel i7',
+            'almacenamiento':'500',
+            'precio' : '3200000'
         },    
         {
+            'tipo':'computador',
             'nombre':'ux433FAC',
-            'url':'imgenes/asuszenbookux433FAC.png'
+            'url':'imgenes/asuszenbookux433FAC.png',
+            'url2':'imgenes/hp14in14cf3037la.png',
+            'ram': '4',
+            'tamaño':'14',
+            'marca':'Asus',
+            'procesador':'intel i3',
+            'almacenamiento':'1000',
+            'precio' : '1500000'
         },
         {
+            'tipo':'computador',
             'nombre':'um431DaAm026',
-            'url':'imgenes/asuszenbookum431DaAm026.png'
+            'url':'imgenes/asuszenbookum431DaAm026.png',
+            'url2':'imgenes/hp14in14cf3037la.png',
+            'ram': '4',
+            'tamaño':'14',
+            'marca':'Asus',
+            'procesador':'intel i3',
+            'almacenamiento':'256',
+            'precio' : '1800000'
         },
         {
+            'tipo':'computador',
             'nombre':'14m413dabv337t',
-            'url':'imgenes/asusvivo14m413dabv337t.png'
+            'url':'imgenes/asusvivo14m413dabv337t.png',
+            'url2':'imgenes/hp14in14cf3037la.png',
+            'ram': '4',
+            'tamaño':'14',
+            'marca':'Asus',
+            'procesador':'intel i3',
+            'almacenamiento':'500',
+            'precio' : '1600000'
         }
         
 ]
