@@ -1,0 +1,237 @@
+
+
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: rgb(214, 211, 211);
+    font-size: 1.3rem;
+    line-height: 1.6em;
+    margin:0;
+    
+}
+
+h1{
+    font-size: 2rem;
+    line-height: 1.6em;
+}
+p{
+    
+    margin-bottom: 1.6em;
+}
+#lupa a {
+    margin-top: 10px;
+    float: left;
+    width: 10px;
+    height: 20px;
+}
+#lupa a img{
+    margin-top: -4px;
+    margin-left: -7px;
+}
+#buscador{
+    width: 350px;
+    padding-right: 40px;
+}
+    #buscador a{
+        margin-top: 10px;
+        float: left;
+        width: 10px;
+        height: 20px;
+    }
+    #buscador a img{
+        margin-top: -4px;
+        margin-left: -7px;
+    }
+    #buscador input{
+        margin-top: 10px;
+        padding-left: 12px;
+        height: 35px;
+        width: 280px;
+    }
+
+.header{
+    background: -webkit-linear-gradient(left,rgb(36, 42, 46)0%,rgb(82, 89, 92)50%,rgb(81, 85, 88)100%);
+    color:white;
+    padding: 2rem 0;
+    position: fixed;
+    left: 0;
+    top:0;
+    width: 100%;
+
+}
+.menu-icon{
+    display:none;
+    
+}
+.header a{
+    color: white;
+    text-decoration: none;
+}
+.logo{
+    
+    letter-spacing: 2px;
+}
+#log{
+    vertical-align: middle;
+}
+
+
+.espacio-filtros{
+    margin-left: 2px;
+    margin-top: 2rem;
+    border: 1px;
+    position: fixed;
+}
+.header-filtros{
+    background: -webkit-linear-gradient(left,rgb(36, 42, 46)0%,rgb(82, 89, 92)50%,rgb(81, 85, 88)100%);
+    color:white;
+    text-align: center;
+    
+    left: 0;
+
+    width: 300px;
+    height: 40px;
+
+} 
+.header-filtros h3{
+    
+    font-size: medium;
+}
+
+.botones-filtros{
+    border: width 1px;
+    
+}
+.botones-filtros ul{
+    margin-top: -5 ;
+list-style: none;
+padding-left: 0px;
+width: 300px;
+
+}
+.botones-filtros ul li{
+    border-width: 1px 0px 1px 0px;
+}
+.productos{
+    margin-top: 150px;
+    margin-left: 350px;
+}
+#select {
+    
+    font-size: smaller;
+}
+.marcas {
+    display: none;
+}
+.marcas.show{
+    transition:all 1.5s linear;
+    display: block;
+}
+.rams {
+    display: none;
+}
+.rams.show{
+    transition:all 1.5s linear;
+    display: block;
+}.tamaños {
+    display: none;
+}
+.tamaños.show{
+    transition:all 1.5s linear;
+    display: block;
+}.procesadores {
+    display: none;
+}
+.procesadores.show{
+    transition:all 1.5s linear;
+    display: block;
+}.almacenamientos {
+    display: none;
+}
+.almacenamientos.show{
+    transition:all 1.5s linear;
+    display: block;
+}
+
+button{
+    margin-top: -10;
+    border-width: 0px 0px 0.2px 0px;
+    width: 300px;
+    height: 40px;
+    background-color: rgb(214, 211, 211);
+    text-align: left;
+    font-size: medium;
+
+}
+button:hover{
+    background: rgb(143, 146, 150);
+}
+
+.logo-nav-container{
+    display: flex;
+    padding-left: 5rem;
+   
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap:wrap;
+}
+.navigation ul{
+    margin: 0;
+    margin-right: 30px;
+    padding:0;
+
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+    .navigation ul li{
+    display: inline-block;
+    }
+    .navigation ul li a{
+        display: block;
+        padding: 0.5rem 1rem;
+        transition:all 0.4s linear;
+        border-radius: 5px;
+    } 
+        .navigation ul li a:hover{
+            background: rgb(107, 111, 117);
+        }
+.footer{
+   
+    background: rgb(77, 122, 206);
+    padding: 3.5rem 0;
+    text-align: center;
+    width: 100%;
+    margin-top:2rem;
+    
+}
+@media only screen and (max-width: 767px ){
+
+    .menu-icon{
+        display:block;
+        cursor: pointer;
+        padding:0.5rem 4rem;
+    }  
+    .navigation{
+       width: 100%;
+       margin-top:1rem ;
+   }
+        .navigation ul{
+         display:none;
+        }
+            .navigation ul.show{
+            /*transition:all 0.4s linear;*/
+             display: block;
+             }
+                .navigation ul li{
+                    display: block;
+                    }
+                    .navigation ul li a{
+                        display: block;
+                        padding: 0.5rem 0;
+                        transition:all 0.4s linear;
+                        border-radius: 5px;
+                    } 
+                        .navigation ul li a:hover{
+                            background: rgb(138, 183, 241);
+                        }
+}

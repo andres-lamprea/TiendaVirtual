@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="mihojadeestilos.css">
+
+</head>
+<body>
+    <header class="header">
+        <div class="containe logo-nav-container">
+        <a class="logo" href="#"><img src="LOGO.png" width="80px" height="80px" id="log">TIENDA VIRTUAL </a>
+        <span class="menu-icon">Menú</span>
+        <nav class="navigation">
+            <ul>
+                <li id="buscador"><a href="#"><img src="lupa.png" width="30px" height="30px"></a><input type="search" ></li>
+                <li><a>cuenta</a></li>
+                <li id ="lupa"><a><img src="caarrito.png" width="30px" height="30px"></a></li>
+            </ul>
+        </nav>
+        </div>
+    </header >
+    <div class="espacio-filtros" width="300px">
+        <div class="filtros">
+            <header class="header-filtros">
+                <h3> Filtros</h3>
+            </header>
+            <div class="botones-filtros">
+            <ul>
+                <li><button type="button" class="marca">Marca</button></li>
+                <div>
+                    <form id="select" class="marcas">
+                    <input type="checkbox" id="HP" name="marca" >HP
+                    <input type="checkbox" id="Asus" name="marca" >Asus
+                    <input type="checkbox" id="Huawei" name="marca" >Huawei
+                    <input type="checkbox" id="Xiaomi" name="marca" >Xiaomi
+                    <input type="checkbox" id="Apple" name="marca" >Apple
+                    <input type="checkbox" id="Samsung" name="marca" >Samsung
+                    <input type="checkbox" id="Motorola" name="marca" >Motorola
+                    <input type="checkbox" id="Hyundai" name="marca" >Hyundai
+                    <input type="checkbox" id="Kindle" name="marca" >Kindle
+                    <input type="checkbox" id="Krono" name="marca" >Krono
+                </form>
+                </div>
+                <li><button type="button"class="ram">Memoria Ram</button></li>
+                <div>
+                    <form id="select" class="rams" >
+                    <input type="checkbox"  id="1" name="ram" >1Gb
+                    <input type="checkbox"  id="2" name="ram" >2Gb
+                    <input type="checkbox"  id="4" name="ram" >4Gb
+                    <input type="checkbox" id="8" name="ram" >8Gb
+                    <input type="checkbox" id="16" name="ram" >16Gb
+                 </form>
+                </div>
+                <li><button type="button"class="tamaño">Pulgadas</button></li>
+                <div>
+                    <form id="select" class="tamaños">
+                    <input type="checkbox"id="2" name="tamaño" >2 pulgadas
+                    <input type="checkbox"id="5.7" name="tamaño" >5.7 pulgadas
+                    <input type="checkbox"id="6" name="tamaño" >6 pulgadas    
+                    <input type="checkbox"id="6.5" name="tamaño" >6.5 pulgadas
+                    <input type="checkbox"id="6.7" name="tamaño" >6.7 pulgadas
+                    <input type="checkbox"id="7.2" name="tamaño" >7.2 pulgadas
+                    <input type="checkbox"id="7.5" name="tamaño" >7.5 pulgadas
+                    <input type="checkbox"id="8" name="tamaño" >8 pulgadas
+                    <input type="checkbox"id="10" name="tamaño" >10 pulgadas
+                    <input type="checkbox"id="10.4" name="tamaño" >10.4 pulgadas
+                    <input type="checkbox"id="11.6" name="tamaño" >11.6 pulgadas
+                    <input type="checkbox"id="14" name="tamaño" >14 pulgadas
+                    <input type="checkbox"id="15" name="tamaño" >15 pulgadas
+                </form>
+                </div>
+                <li><button type="button"class="procesador">Procesador</button></li>
+                <div>
+                    <form id="select"class="procesadores">
+                    <input type="checkbox"id="intel i3" name="procesador" >intel i3
+                    <input type="checkbox"id="Amd ryzen 3" name="procesador" >Amd ryzen 3
+                    <input type="checkbox"id="intel i7" name="procesador" >intel i7
+                    <input type="checkbox"id="snapdragon" name="procesador" >snapdragon
+                    <input type="checkbox"id="A14 Bionic" name="procesador" >A14 Bionic
+                    <input type="checkbox"id="exynos" name="procesador" >exynos
+                    <input type="checkbox"id="basico" name="procesador" >basico
+                </form>
+                </div>
+                <li><button type="button"class="almace">Almacenamiento Interno</button></li>
+                <div>
+                    <form id="select"class="almacenamientos" >
+                    <input type="checkbox"id="8" name="almacenamiento" >8Gb
+                    <input type="checkbox"id="16" name="almacenamiento" >16Gb
+                    <input type="checkbox"id="32" name="almacenamiento" >32Gb
+                    <input type="checkbox"id="64" name="almacenamiento" >64Gb
+                    <input type="checkbox"id="128" name="almacenamiento" >128b
+                    <input type="checkbox"id="256" name="almacenamiento" >256Gb
+                    <input type="checkbox"id="500" name="almacenamiento" >500Gb
+                    <input type="checkbox"id="1000" name="almacenamiento" >1000Gb
+                </form>
+                </div>
+
+            </ul>
+            
+            </div>
+        </div>
+    </div>
+    <div class="productos">
+     <div class="producto1" id="product">
+     </div>
+    </div>
+    <script src="imagenes_productos.json"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="script.js"></script>
+    <script>
+     
+
+        for(var i = 0;i< producto[0].productos.length;i++){
+            var image = producto[0].productos[i].url;
+            var image1 = producto[0].productos[i].url2;
+            var nombre = producto[0].productos[i].tipo+' '+producto[0].productos[i].marca + ' '+
+            producto[0].productos[i].tamaño +' '+ ' pulgadas'+' '+ producto[0].productos[i].nombre;
+            var text = producto[0].productos[i].nombre;
+            var ram=producto[0].productos[i].ram;
+            var tamaño=producto[0].productos[i].tamaño;
+            var almacenamiento=producto[0].productos[i].almacenamiento;
+            var marca=producto[0].productos[i].marca;
+            var precio=producto[0].productos[i].precio;
+            var procesador=producto[0].productos[i].procesador;
+            addElement(i);
+        }
+   
+    $('input[type=checkbox]').on('change', function() {
+    var tip, val ,id;
+    var filtrosSeleccionados = new Array();
+        if ($(this).is(':checked') ) {
+     tip =  $(this).prop("name");
+     val = $(this).prop("id");
+     id = val;
+        filtrar(tip, val,id);
+    } else {
+        tip =  $(this).prop("name");
+        val = $(this).prop("id");
+        for (var i=0;i<producto[0].productos.length;i++){
+                var tipo_filtro=producto[0].productos[i][tip];
+            if(tipo_filtro == val){
+               document.getElementById("newDiv"+i).style.display='none';
+                
+            }
+            }
+    }
+    $('input[type=checkbox]:checked').each(function() {
+  filtrosSeleccionados.push($(this).prop("id"));
+});
+if(filtrosSeleccionados.length ==0){
+    for (var i=0;i<producto[0].productos.length;i++){
+            document.getElementById("newDiv"+i).style.display='block';}
+       }
+});
+
+/*$('input[type=checkbox]:checked').on('change', function() {
+    tip =  $(this).prop("name");
+            for (var i=0;i<producto[0].productos.length;i++){
+              
+               document.getElementById("newDiv"+i).style.display='none';
+                
+            
+            }
+});*/
+    function filtrar(tipo, valor, id){
+        if(document.getElementById(id).checked){
+            for (var i=0;i<producto[0].productos.length;i++){
+            document.getElementById("newDiv"+i).style.display='none';}
+        for (var i=0;i<producto[0].productos.length;i++){
+            
+            var tipo_filtro=producto[0].productos[i][tipo];
+            if(tipo_filtro == valor){
+               document.getElementById("newDiv"+i).style.display='block';
+                
+            }
+        }
+        }else{
+            /*for (var i=0;i<producto[0].productos.length;i++){
+                var tipo_filtro=producto[0].productos[i][tipo];
+            if(tipo_filtro == valor){
+               document.getElementById("newDiv"+i).style.display='none';
+                
+            }
+            }*/
+        }
+    }
+        function addElement(i){
+    var newDiv = document.createElement("div");
+    var newImg= document.createElement("img");
+    var Pa=document.createElement("p");
+    var newPar= document.createTextNode(nombre);
+    var div1=document.createElement("div");
+    var contenedor=document.getElementById("product");
+    var lista = document.createElement("ul");
+    var botonCarrito=document.createElement("button");
+    
+    
+    $(newImg).attr('src',image);
+    $(newImg).attr('onmouseover',"this.src='"+image1+"'");
+    $(newImg).attr('onmouseout',"this.src='"+image+"'");
+    $(newImg).attr('onclick',"javascript:this.width=350;height=350");
+    $(newImg).attr('ondblclick',"javascript:this.width=250;height=250");
+    $(newImg).css("float","left");
+    $(newDiv).css({"background-color":"white","margin-top":"10px","width":"750px","height":"350px","font-size":"18px", "display":"block"});
+    $(newDiv).attr("id","newDiv"+i);
+    $(lista).css("border-top-style","solid");
+    $(lista).css("border-width","1px");
+    $(lista).css("margin-left","210px");
+    $(lista).append('<li style="list-style: none;">'+"ref: "+text+"Gb"+'</li>');
+    $(lista).append('<li style="list-style: none;">'+"ram: "+ram+"Gb"+'</li>');
+    $(lista).append('<li style="list-style: none;">'+"tamaño: "+tamaño+"Pulgadas"+'</li>');
+    $(lista).append('<li style="list-style: none;">'+"almacenamiento: "+almacenamiento+"Gb"+'</li>');
+    $(lista).append('<li style="list-style: none;">'+"marca: "+marca+'</li>');
+    $(lista).append('<li style="list-style: none;">'+"precio: "+precio+"COP"+'</li>');
+    $(lista).append('<li style="list-style: none;">'+"procesador: "+procesador+'</li>');
+    $(botonCarrito).css({"float":"right",
+    "margin-top":"-60px",
+    "margin-right":"20px",
+    "width":"150px",
+    "border-style":"ridge",
+    "border-width":"1px",
+    "background":"rgb(33, 206, 9)",
+    "text-align":"center",
+    "color":"white"});
+    $(botonCarrito).append("Agregar al carrito");
+    newDiv.appendChild(newImg);
+    Pa.appendChild(newPar);
+    newDiv.appendChild(Pa);
+    newDiv.appendChild(div1);
+    contenedor.appendChild(newDiv);
+    div1.appendChild(lista);
+    newDiv.appendChild(botonCarrito);
+
+
+       // var image = producto[0].productos.imagen.url;
+        
+       // $('.hp14').attr('src',image);
+       
+    }
+    
+    </script>
+</body>
+</html>
