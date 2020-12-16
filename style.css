@@ -1,0 +1,66 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+
+}
+
+body{
+	background-image: url('Captura.png');
+}
+
+.registro{
+	width: 400px;
+	background: #76777A;
+	padding: 30px;
+	margin: auto;
+	margin-top: 100px;
+	border-radius: 5px;
+	font-family: 'calibri';
+	color: white;
+	box-shadow: 5px 12px 35px #000;	
+ }	
+
+ .registro h4{
+ 	font-size: 20px;
+ 	margin-bottom: 20px;
+ }
+
+ .controles{
+ 	width: 100%;
+ 	background: #E4E6F0;
+ 	padding: 10px;
+ 	border-radius: 5px;
+ 	margin-bottom: 16px;
+ 	border: 2px solid  #0027AD;
+ }
+
+ .registro p{
+ 	height: 30px;
+ 	text-align: center;
+ 	font-size: 18px;
+ 	line-height: 40px;
+ }
+
+ .registro a{
+ 	color: white;
+ 	text-decoration: none;
+ }
+
+  .registro a:hover {
+ 	color: white;
+ 	text-decoration: underline;
+ }
+
+ .registro .Boton{
+ 	width: 80%;
+ 	background: #B5B5B7;
+ 	border: none;
+ 	padding: 6px;
+ 	color: black;
+ 	margin: 2px 2px;
+ 	font-size: 15px;
+ }
+
+
+	
